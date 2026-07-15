@@ -10,7 +10,7 @@ export default function FormFuncionario(){
     const [cargo,setCargo] = useState("")
     const [salario, setSalario] = useState("")
 
-    async function cadastrar() {
+    async function cadastrar(e) {
         e.preventDefault()
 
         try {
@@ -30,9 +30,9 @@ export default function FormFuncionario(){
     return(
         <form
   onSubmit={cadastrar}
-  className="max-w-md mx-auto mt-10 bg-white shadow-lg rounded-xl p-8 flex flex-col gap-5"
+  className="max-w-md mx-auto mt-10 bg-slate-900 text-white shadow-2xl rounded-2xl border border-slate-700 p-8 flex flex-col gap-5"
 >
-  <h2 className="text-2xl font-bold text-center text-gray-800">
+  <h2 className="text-2xl font-bold text-center text-white">
     Cadastro de Funcionário
   </h2>
 
@@ -41,7 +41,7 @@ export default function FormFuncionario(){
     placeholder="Nome..."
     value={nome}
     onChange={(e) => setNome(e.target.value)}
-    className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    className="bg-slate-100 text-slate-900 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
   />
 
   <input
@@ -49,7 +49,7 @@ export default function FormFuncionario(){
     placeholder="Cargo..."
     value={cargo}
     onChange={(e) => setCargo(e.target.value)}
-    className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    className="bg-slate-100 text-slate-900 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
   />
 
   <input
@@ -57,7 +57,7 @@ export default function FormFuncionario(){
     placeholder="Salário..."
     value={salario}
     onChange={(e) => setSalario(e.target.value)}
-    className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+    className="bg-slate-100 text-slate-900 border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
   />
 
   <button
