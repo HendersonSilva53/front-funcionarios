@@ -1,17 +1,20 @@
-import Header from "./components/Header";
-
 export default function Home() {
-  return(
-    <div>
-      <Header />
+  return (
+  <div>
 
-      <main style= {{display: "flex", justifyContent: "center", alignItems:"center",
-        height: "80vh", flexDirection: "column"
-      }}>
-        <h2>Bem-vindo ao Newbies F.C</h2>
+    <main 
+    style={{
+      display:"flex", justifyContent:"center", 
+      alignItems:"center", 
+      height:"80vh", 
+      flexDirection:"column"}}
+    >
+      <h2>Bem-vindo ao RH - Terabits</h2>
 
-        <p>Sistema desenvolvido durante o curso de Devops</p>
-      </main>
-    </div>
+      <p>
+        Sistema desenvolvido durante o curso Devops
+      </p>
+    </main>
+  </div>
   );
 }
